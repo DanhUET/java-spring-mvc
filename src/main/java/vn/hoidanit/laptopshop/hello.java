@@ -10,4 +10,14 @@ public class hello {
         return "Hello World from Spring Boot! qUAN";
     }
 
+    @GetMapping("/user")
+    public String userPage() {
+        return "I am user";
+    }
+
+    @GetMapping("/admin")
+    public String adminPage() {
+        return "i am admin";
+    }
+
 }
